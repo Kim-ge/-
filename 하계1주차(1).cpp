@@ -30,23 +30,23 @@ void Vaccine::classification() {
 		cout << "접종 대상자가 아닙니다. 안녕히 가십시오." << endl;
 	}
 	else {
-		cout << "나이를 입력하십시오. : ";
-		cin >> age;
+	    cout << "나이를 입력하십시오. : ";
+	    cin >> age;
 
 	    if (18<=age && age<50) {
-			cout << endl;
-			cout << "접종 백신 : " << *arr[0]<< endl; //포인터배열의 0번째 원소 
-			cout << "접종 대기실로 이동해 주십시오." << endl;
-		}
-		else if (50<=age && age<=64) {
-			cout << endl;
-			cout << "접종 백신 : " << *arr[1] << endl;
-			cout << "접종 대기실로 이동해 주십시오." << endl;
-		}
-		else {
-			cout << endl;
-			cout << "접종 대상자가 아닙니다. 안녕히 가십시오." << endl;
-		}
+		cout << endl;
+		cout << "접종 백신 : " << *arr[0]<< endl; //포인터배열의 0번째 원소 
+		cout << "접종 대기실로 이동해 주십시오." << endl;
+	    }
+	    else if (50<=age && age<=64) {
+		cout << endl;
+		cout << "접종 백신 : " << *arr[1] << endl;
+		cout << "접종 대기실로 이동해 주십시오." << endl;
+	    }
+	    else {
+		cout << endl;
+		cout << "접종 대상자가 아닙니다. 안녕히 가십시오." << endl;
+	    }
 	}
 }
 

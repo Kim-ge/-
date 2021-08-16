@@ -1,9 +1,9 @@
 #include<iostream>
 using namespace std;
 
-int a[90];
+long long a[90];
 
-int F(int n) {
+long long F(int n) {
 	a[0] = 0;
 	a[1] = 1;
 
